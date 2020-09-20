@@ -7,9 +7,9 @@ let sortedArray = array.sort((a, b) => a - b)
 
 console.log(sortedArray)
 
-let printData = (currentValue, count) => console.log(`${currentValue} aparece ${count} vez(es)`)
+let printValues = (currentValue, count) => console.log(`${currentValue} aparece ${count} vez(es)`)
 
-function printRepitedArrayNumbers(array) {
+function findRepitedArrayNumbers(array) {
   let currentValue = array[0]
   let count = 0;
 
@@ -18,11 +18,11 @@ function printRepitedArrayNumbers(array) {
         count++
         array.shift()
     } else {
-      printData(currentValue, count)
+      printValues(currentValue, count)
       currentValue = array[0]
       count = 0
     }
   }
 }
 
-printRepitedArrayNumbers(sortedArray)
+findRepitedArrayNumbers(sortedArray)
