@@ -1,7 +1,7 @@
-function copyMachine(array, n) {
+function duplicateArray (array, n) {
   let newArray = [];
   
-  while (n >= 1) {
+  while (n > 0) {
     newArray[n - 1] = [...array]
     n--;
   }
