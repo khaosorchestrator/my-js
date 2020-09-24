@@ -1,8 +1,10 @@
-function copyMachine(arr, num) {
-  let newArr = [];
-  while (num >= 1) {
-    newArr[num - 1] = [...arr]
-    num--;
+function copyMachine(array, n) {
+  let newArray = [];
+  
+  while (n >= 1) {
+    newArray[n - 1] = [...array]
+    n--;
   }
-  return newArr;
+  
+  return newArray;
 }
