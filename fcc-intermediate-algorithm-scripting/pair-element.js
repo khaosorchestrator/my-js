@@ -5,9 +5,9 @@ const pairs = {
   G: "C"
 }
 
-function pairElement(str) {
-  return [...str].map(value => [value, pairs[value]])
-}
+let pairElement = str =>
+  [...str]
+    .map(value => [value, pairs[value]])
 
 
 let value = pairElement("ATCGA");

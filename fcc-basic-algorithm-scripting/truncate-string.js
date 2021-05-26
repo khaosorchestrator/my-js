@@ -1,0 +1,1 @@
+let truncateString = (str, num) => num < str.length ? `${str.substr(0, num)}...` : str;

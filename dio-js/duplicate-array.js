@@ -1,8 +1,8 @@
-function duplicateArray (array, n) {
+function duplicateArray (arr, n) {
   let newArray = [];
   
   while (n > 0) {
-    newArray[n - 1] = [...array]
+    newArray[n - 1] = [...arr]
     n--;
   }
   
